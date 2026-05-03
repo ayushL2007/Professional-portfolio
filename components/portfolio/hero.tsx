@@ -32,7 +32,7 @@ export function Hero() {
               style={{ borderColor: "var(--accent)" }}
             >
               <Image
-                src="https://avatars.githubusercontent.com/u/ayushL2007?v=4"
+                src="https://avatars.githubusercontent.com/u/85987898?v=4"
                 alt="Ayush Lahiri"
                 width={112}
                 height={112}
