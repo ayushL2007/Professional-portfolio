@@ -124,7 +124,7 @@ export function Navbar() {
               <Mail size={18} />
             </a>
             <a
-              href="/Resume_Ayush_Lahiri.pdf"
+              href="https://ayush-uyj6.onrender.com/resume"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 text-xs font-medium px-3 py-1.5 rounded-lg border transition-all duration-200 hover:border-indigo-500 hover:text-indigo-400"

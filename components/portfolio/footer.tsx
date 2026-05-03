@@ -3,17 +3,18 @@ import { Github, Linkedin, Mail } from "lucide-react"
 export function Footer() {
   return (
     <footer
-      className="py-10 px-6 border-t"
+      className="py-10 px-6 mt-8 border-t"
       style={{ borderColor: "var(--border)" }}
     >
       <div className="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
-        <p
-          className="text-sm font-mono"
-          style={{ color: "var(--muted-foreground)" }}
-        >
-          Built by{" "}
-          <span style={{ color: "var(--foreground)" }}>Ayush Lahiri</span>
-        </p>
+        <div className="text-center sm:text-left">
+          <p className="text-sm font-mono" style={{ color: "var(--foreground)" }}>
+            ayush.dev
+          </p>
+          <p className="text-xs mt-0.5" style={{ color: "var(--muted-foreground)" }}>
+            &copy; {new Date().getFullYear()} Ayush Lahiri. All rights reserved.
+          </p>
+        </div>
 
         <div className="flex items-center gap-5">
           <a

@@ -11,32 +11,10 @@ export default function Page() {
     <main style={{ background: "var(--background)", minHeight: "100vh" }}>
       <Navbar />
       <Hero />
-
-      {/* Divider */}
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="h-px" style={{ background: "var(--border)" }} />
-      </div>
-
       <Projects />
-
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="h-px" style={{ background: "var(--border)" }} />
-      </div>
-
       <Freelance />
-
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="h-px" style={{ background: "var(--border)" }} />
-      </div>
-
       <Experience />
-
-      <div className="max-w-4xl mx-auto px-6">
-        <div className="h-px" style={{ background: "var(--border)" }} />
-      </div>
-
       <Education />
-
       <Footer />
     </main>
   )

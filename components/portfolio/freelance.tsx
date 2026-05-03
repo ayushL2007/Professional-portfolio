@@ -1,6 +1,6 @@
 "use client"
 
-import { ExternalLink, CheckCircle2 } from "lucide-react"
+import { Mail, CheckCircle2 } from "lucide-react"
 
 const freelanceWorks = [
   {
@@ -8,12 +8,12 @@ const freelanceWorks = [
     client: "Private Client",
     type: "Full-Stack Development",
     description:
-      "Architected and delivered a full-stack Ruby on Rails web application, handling everything from database schema design to front-end integration. Implemented RESTful APIs, authentication, and responsive UI.",
+      "Architected and delivered a full-stack Ruby on Rails web application — from database schema design to front-end integration. Implemented RESTful APIs, Devise authentication, and a responsive UI.",
     deliverables: [
       "Custom Rails API with authentication",
       "Responsive front-end UI",
       "Database design & optimization",
-      "Deployment on Render/Heroku",
+      "Deployment on Render",
     ],
     tech: ["Ruby on Rails", "PostgreSQL", "HTML/CSS", "JavaScript"],
     accent: "#6366f1",
@@ -24,7 +24,7 @@ const freelanceWorks = [
     client: "Startup Client",
     type: "Mobile Development",
     description:
-      "Designed and built a production-ready native Android application from scratch using Java. Covered UI/UX design in XML, REST API integration, local SQLite persistence, and Google Play submission support.",
+      "Designed and built a production-ready native Android app from scratch in Java. Covered UI/UX in XML, REST API integration, offline-first SQLite persistence, and Play Store submission support.",
     deliverables: [
       "Native Android app in Java",
       "REST API integration",
@@ -40,10 +40,10 @@ const freelanceWorks = [
     client: "Developer Client",
     type: "Backend Engineering",
     description:
-      "Built a backend service that integrates with the GitHub API using Octokit, automatically aggregating repository data, language stats, and project highlights. Implemented smart caching to minimize API calls with a 24-hour refresh strategy.",
+      "Built a backend service integrating with the GitHub API via Octokit — aggregating repo data, language stats, and project highlights. Implemented smart file-based caching with a 24-hour refresh strategy.",
     deliverables: [
       "GitHub API integration via Octokit",
-      "Smart file-based caching system",
+      "Smart file-based caching",
       "Language & repo analytics",
       "JSON data service layer",
     ],
@@ -52,16 +52,16 @@ const freelanceWorks = [
     status: "Completed",
   },
   {
-    title: "Technical Mentorship — Android Dev Sessions",
+    title: "Android Dev Mentorship Sessions",
     client: "GDG IIIT Kalyani",
     type: "Technical Education",
     description:
-      "Delivered intensive Android development sessions as App Dev Lead at Google Developer Group IIIT Kalyani. Covered the full Android development lifecycle, from layouts to networking, for a cohort of student developers.",
+      "Delivered structured Android development sessions as App Dev Lead at Google Developer Group IIIT Kalyani. Covered the full Android lifecycle for a cohort of student developers — layouts to networking.",
     deliverables: [
-      "Structured curriculum for Android dev",
+      "Structured Android dev curriculum",
       "Hands-on coding workshops",
       "Project guidance & code reviews",
-      "Resource materials & recordings",
+      "Resource materials",
     ],
     tech: ["Native Android", "Java", "XML", "Teaching"],
     accent: "#f89720",
@@ -73,28 +73,21 @@ export function Freelance() {
   return (
     <section id="freelance" className="py-24 px-6">
       <div className="max-w-4xl mx-auto">
-        {/* Section header */}
-        <div className="flex items-center gap-4 mb-4">
-          <h2
-            className="text-2xl font-bold"
-            style={{ color: "var(--foreground)" }}
-          >
+        <div className="flex items-center gap-4 mb-3">
+          <h2 className="text-2xl font-bold" style={{ color: "var(--foreground)" }}>
             Freelance Work
           </h2>
           <div className="flex-1 h-px" style={{ background: "var(--border)" }} />
         </div>
-        <p
-          className="text-sm mb-12"
-          style={{ color: "var(--muted-foreground)" }}
-        >
+        <p className="text-sm mb-10" style={{ color: "var(--muted-foreground)" }}>
           Selected client work and independent engagements outside of academic projects.
         </p>
 
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-4">
           {freelanceWorks.map((work) => (
-            <div
+            <article
               key={work.title}
-              className="rounded-xl border p-6 transition-all duration-300 hover:border-opacity-80"
+              className="rounded-xl border p-6 transition-colors duration-300"
               style={{
                 background: "var(--surface-raised)",
                 borderColor: "var(--border)",
@@ -102,7 +95,7 @@ export function Freelance() {
                 borderLeftWidth: "3px",
               }}
             >
-              {/* Header row */}
+              {/* Header */}
               <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
                 <div>
                   <h3
@@ -112,28 +105,23 @@ export function Freelance() {
                     {work.title}
                   </h3>
                   <div className="flex flex-wrap items-center gap-2 mt-1">
-                    <span
-                      className="text-xs font-mono"
-                      style={{ color: work.accent }}
-                    >
+                    <span className="text-xs font-mono" style={{ color: work.accent }}>
                       {work.type}
                     </span>
-                    <span
-                      className="text-xs"
-                      style={{ color: "var(--muted-foreground)" }}
-                    >
-                      &middot; {work.client}
+                    <span className="text-xs" style={{ color: "var(--muted-foreground)" }}>
+                      · {work.client}
                     </span>
                   </div>
                 </div>
                 <span
                   className="flex items-center gap-1.5 text-xs px-2.5 py-1 rounded-full font-medium shrink-0"
                   style={{
-                    background: work.status === "Ongoing"
-                      ? "rgba(99,102,241,0.12)"
-                      : "rgba(34,197,94,0.12)",
+                    background:
+                      work.status === "Ongoing"
+                        ? "rgba(99,102,241,0.1)"
+                        : "rgba(34,197,94,0.1)",
                     color: work.status === "Ongoing" ? "#6366f1" : "#22c55e",
-                    border: `1px solid ${work.status === "Ongoing" ? "rgba(99,102,241,0.3)" : "rgba(34,197,94,0.3)"}`,
+                    border: `1px solid ${work.status === "Ongoing" ? "rgba(99,102,241,0.25)" : "rgba(34,197,94,0.25)"}`,
                   }}
                 >
                   <span
@@ -148,15 +136,14 @@ export function Freelance() {
 
               {/* Description */}
               <p
-                className="text-sm leading-relaxed mb-4"
+                className="text-sm leading-relaxed mb-5"
                 style={{ color: "var(--muted-foreground)" }}
               >
                 {work.description}
               </p>
 
-              {/* Deliverables + Tech split */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* Deliverables */}
+              {/* Deliverables + Stack */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <div>
                   <p
                     className="text-xs font-semibold uppercase tracking-wider mb-2"
@@ -172,7 +159,7 @@ export function Freelance() {
                         style={{ color: "var(--muted-foreground)" }}
                       >
                         <CheckCircle2
-                          size={13}
+                          size={12}
                           className="mt-0.5 shrink-0"
                           style={{ color: work.accent }}
                         />
@@ -182,7 +169,6 @@ export function Freelance() {
                   </ul>
                 </div>
 
-                {/* Tech */}
                 <div>
                   <p
                     className="text-xs font-semibold uppercase tracking-wider mb-2"
@@ -190,15 +176,15 @@ export function Freelance() {
                   >
                     Stack
                   </p>
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5">
                     {work.tech.map((t) => (
                       <span
                         key={t}
-                        className="text-xs px-2 py-1 rounded-md font-mono"
+                        className="text-xs px-2 py-0.5 rounded font-mono"
                         style={{
-                          background: `${work.accent}15`,
+                          background: `${work.accent}12`,
                           color: work.accent,
-                          border: `1px solid ${work.accent}30`,
+                          border: `1px solid ${work.accent}28`,
                         }}
                       >
                         {t}
@@ -207,41 +193,32 @@ export function Freelance() {
                   </div>
                 </div>
               </div>
-            </div>
+            </article>
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA banner */}
         <div
-          className="mt-10 rounded-xl border p-6 flex flex-col sm:flex-row items-center justify-between gap-4"
+          className="mt-8 rounded-xl border p-5 flex flex-col sm:flex-row items-center justify-between gap-4"
           style={{
-            background: "var(--accent-muted)",
-            borderColor: "var(--accent-border)",
+            background: "rgba(99,102,241,0.07)",
+            borderColor: "rgba(99,102,241,0.2)",
           }}
         >
           <div>
-            <p
-              className="text-sm font-semibold"
-              style={{ color: "var(--foreground)" }}
-            >
+            <p className="text-sm font-semibold" style={{ color: "var(--foreground)" }}>
               Open to freelance opportunities
             </p>
-            <p
-              className="text-xs mt-0.5"
-              style={{ color: "var(--muted-foreground)" }}
-            >
+            <p className="text-xs mt-0.5" style={{ color: "var(--muted-foreground)" }}>
               Rails backends, Android apps, API integrations &amp; more.
             </p>
           </div>
           <a
             href="mailto:ayushlahiri2007@gmail.com"
-            className="flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-200 hover:opacity-90 shrink-0"
-            style={{
-              background: "var(--accent)",
-              color: "#fff",
-            }}
+            className="flex items-center gap-2 text-sm font-semibold px-4 py-2 rounded-lg transition-all duration-200 hover:opacity-85 shrink-0"
+            style={{ background: "var(--accent)", color: "#fff" }}
           >
-            <ExternalLink size={14} />
+            <Mail size={14} />
             Get in touch
           </a>
         </div>
