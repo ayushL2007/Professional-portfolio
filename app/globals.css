@@ -37,7 +37,7 @@
 
 @theme inline {
   --font-sans: var(--font-inter), 'Inter', system-ui, sans-serif;
-  --font-mono: var(--font-mono), 'JetBrains Mono', monospace;
+  --font-mono: var(--font-jetbrains), 'JetBrains Mono', monospace;
   --color-surface: var(--surface);
   --color-surface-raised: var(--surface-raised);
   --color-background: var(--background);
