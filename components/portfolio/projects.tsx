@@ -5,64 +5,61 @@ import { ExternalLink, Github, ChevronDown } from "lucide-react"
 
 const featuredProjects = [
   {
-    name: "Course-Craft",
+    name: "Model-Based Linear RL",
     description:
-      "AI-powered educational management platform built for Microsoft ImagineCup (Semi-finalist). Helps institutions manage courses, assignments, and student progress.",
-    tech: ["Ruby on Rails", "Full Stack", "JavaScript", "PostgreSQL"],
+      "Implemented Custom Model Based Linear-RL from scratch for inverted-pendulum system. The RL model maintains desired state with ±3% margin of error in angle. Gaussian supervised model for next state prediction achieves 98.7% accuracy on synthetic simulator data.",
+    tech: ["Python", "PyTorch", "Reinforcement Learning", "Control Theory"],
     github: "https://github.com/ayushL2007",
-    live: "https://course-craft-3.onrender.com",
-    accent: "#6366f1",
-    badge: "ImagineCup Semi-finalist",
+    accent: "#06b6d4",
+    badge: "98.7% Accuracy",
   },
   {
-    name: "Signetic",
+    name: "Autograd Engine",
     description:
-      "Sign language recognition and communication tool developed for InnovateX (Top 10). Bridges the communication gap for the hearing-impaired using ML models.",
-    tech: ["Machine Learning", "Native Android", "Java", "Python"],
+      "Designed and implemented a custom Autograd engine from scratch with secondary data structures and complex operations support. Built multi-layered linear regression, softmax, and sigmoid functions. Complete automatic differentiation implementation.",
+    tech: ["Numpy", "Python", "Backpropagation", "Neural Networks"],
     github: "https://github.com/ayushL2007",
-    live: "https://signetic.vercel.app",
+    accent: "#a78bfa",
+    badge: "From Scratch",
+  },
+  {
+    name: "RBF Kernel SVM",
+    description:
+      "Designed and implemented Custom RBF Kernel SVM for breast cancer detection achieving ~97.6% accuracy with only 0.3% false negative rate (Type-II Error). Outperformed standard Neural Network trained on 128 iterations with 126 samples, 30 input dimensions.",
+    tech: ["Numpy", "Python", "SVM", "Machine Learning"],
+    github: "https://github.com/ayushL2007",
     accent: "#22c55e",
-    badge: "InnovateX Top 10",
-  },
-  {
-    name: "Portfolio",
-    description:
-      "Dynamic Ruby on Rails app that fetches live GitHub repos via the Octokit API. Features a claymorphism design and real-time data refresh with smart 24h caching.",
-    tech: ["Ruby on Rails", "Octokit API", "CSS", "JavaScript"],
-    github: "https://github.com/ayushL2007/Portfolio",
-    live: "https://ayush-uyj6.onrender.com",
-    accent: "#ef4444",
-    badge: null,
+    badge: "97.6% Accuracy",
   },
 ]
 
 const otherProjects = [
   {
-    name: "Android Projects",
+    name: "Transformer LM from Scratch",
     description:
-      "Collection of native Android apps built with Java — utility tools, experimental UI patterns, and hardware-integrated features.",
-    tech: ["Java", "XML", "Android SDK"],
+      "Implemented a Transformer Language Model from scratch using only Numpy. Trained on 1M-TinyStories Dataset with Reinforcement Learning from Human Feedback (RLHF). Built custom BPE 50K-context window tokenizer. Optimized with multiprocessing for 20% throughput increase.",
+    tech: ["Numpy", "Python", "Transformers", "NLP"],
     github: "https://github.com/ayushL2007",
-    accent: "#f89720",
-    badge: null,
+    accent: "#f59e0b",
+    badge: "RLHF Implemented",
   },
   {
     name: "OS & Systems Code",
     description:
-      "Low-level C programs exploring OS concepts: memory management, process scheduling, file systems, and hardware-aware optimizations.",
-    tech: ["C", "Linux", "Systems Programming"],
+      "Low-level C/C++ programs exploring OS concepts: memory management, process scheduling, file systems, and hardware-aware optimizations. Core systems projects from DSA and OS coursework.",
+    tech: ["C", "C++", "Linux", "Systems Programming"],
     github: "https://github.com/ayushL2007",
     accent: "#3b82f6",
     badge: null,
   },
   {
-    name: "Web Experiments",
+    name: "LeetCode & Competitive Programming",
     description:
-      "Front-end and full-stack web experiments exploring JavaScript animations, Ruby on Rails APIs, and CSS design systems.",
-    tech: ["JavaScript", "HTML", "CSS", "Rails"],
+      "1620+ LeetCode rating and solved 150+ coding problems. Achieved Top 4% in Naukri EROH Ring of Honour. Finalist in multiple hackathons: Innovate-X, BotBalls (Top 4), and Code Canvas.",
+    tech: ["Python", "C++", "Data Structures", "Algorithms"],
     github: "https://github.com/ayushL2007",
-    accent: "#a78bfa",
-    badge: null,
+    accent: "#ef4444",
+    badge: "Top 4% Ranking",
   },
 ]
 

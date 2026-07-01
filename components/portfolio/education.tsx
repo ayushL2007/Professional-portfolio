@@ -6,27 +6,29 @@ const education = [
   {
     degree: "B.Tech in Computer Science & Engineering",
     institution: "IIIT Kalyani, West Bengal",
-    date: "Aug 2025 — 2029",
+    date: "Sept 2025 — Jun 2029",
     points: [
-      "Specializing in Systems Programming and Native Android Development.",
-      "Strong interest in OS internals, hardware-aware code, and Computer Architecture.",
-      "Currently exploring NLP, Transformers, and Neural Networks.",
+      "CGPA: 8.26/10",
+      "Specializing in Machine Learning, Deep Learning, and Systems Programming.",
+      "Completed: CS229 (ML), 6.086 (Hands-on Deep Learning), CS231N (Computer Vision).",
+      "Strong foundation in OS internals, Computer Architecture, and Advanced Algorithms.",
     ],
-    accent: "#6366f1",
+    accent: "#06b6d4",
   },
   {
     degree: "Higher Secondary Education (PCM)",
     institution: "Mothers' International Academy",
-    date: "2023 — 2025",
+    date: "Apr 2023 — Apr 2025",
     points: [
       "Completed senior secondary with Physics, Chemistry, and Mathematics.",
+      "Percentage: 78%",
     ],
     accent: "#3b82f6",
   },
   {
-    degree: "High School (ICSE)",
+    degree: "High School (CISCE)",
     institution: "Carmel School",
-    date: "2014 — 2023",
+    date: "Passed Apr 2023",
     points: [
       "Graduated with 93.4% overall score.",
       "Distinction in Mathematics and Computer Science.",
