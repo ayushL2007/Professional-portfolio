@@ -8,7 +8,7 @@ import { Footer } from "@/components/portfolio/footer"
 
 export default function Page() {
   return (
-    <main style={{ background: "var(--background)", minHeight: "100vh", position: "relative", zIndex: 2 }}>
+    <main style={{ minHeight: "100vh" }}>
       <Navbar />
       <Hero />
       <Projects />
