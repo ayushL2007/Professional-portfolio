@@ -6,11 +6,11 @@ const experiences = [
   {
     role: "App Dev Lead",
     company: "Google Developer Group IIITK",
-    date: "2025 — Present",
+    date: "Oct 2025 — Present",
     description:
-      "Build scalable Native Android apps and run intensive technical sessions for student developers within the GDG IIIT Kalyani community. Responsible for curriculum design and hands-on code reviews.",
-    tags: ["Native Android", "Java", "Teaching", "Leadership"],
-    accent: "#6366f1",
+      "Build scalable native apps and run intensive technical sessions for student developers within the GDG IIIT Kalyani community. Responsible for curriculum design, hands-on code reviews, and mentorship for 80+ participants in technical workshops.",
+    tags: ["Leadership", "Technical Mentorship", "Workshop Design", "Community"],
+    accent: "#06b6d4",
     link: null,
   },
   {

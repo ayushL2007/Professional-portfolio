@@ -4,15 +4,15 @@ import { Github, Linkedin, Mail, ArrowDown } from "lucide-react"
 import Image from "next/image"
 
 const techStack = [
-  { name: "Ruby on Rails", color: "#cc3333" },
-  { name: "Native Android", color: "#3ddc84" },
-  { name: "Java", color: "#f89720" },
-  { name: "HTML / CSS", color: "#e34c26" },
-  { name: "JavaScript", color: "#f7de1e" },
-  { name: "C", color: "#5b94ff" },
-  { name: "Linux / OS", color: "#a0a0b0" },
-  { name: "NLP & Transformers", color: "#a78bfa" },
-  { name: "PostgreSQL", color: "#336791" },
+  { name: "Python", color: "#3776ab" },
+  { name: "PyTorch", color: "#ee4c2c" },
+  { name: "Numpy", color: "#013243" },
+  { name: "Machine Learning", color: "#a78bfa" },
+  { name: "Deep Learning", color: "#f59e0b" },
+  { name: "Transformers", color: "#06b6d4" },
+  { name: "C / C++", color: "#5b94ff" },
+  { name: "Systems Programming", color: "#a0a0b0" },
+  { name: "Linux / OS", color: "#22c55e" },
   { name: "Git", color: "#f05032" },
 ]
 
@@ -60,7 +60,7 @@ export function Hero() {
               className="text-lg md:text-xl font-medium animate-fade-up"
               style={{ color: "var(--muted-foreground)", animationDelay: "0.3s" }}
             >
-              Full-Stack Developer &amp; CS Student at{" "}
+              ML Engineer &amp; Systems Developer at{" "}
               <span style={{ color: "var(--foreground)" }}>IIIT Kalyani</span>
             </h2>
           </div>
@@ -71,15 +71,15 @@ export function Hero() {
           className="text-base md:text-lg leading-relaxed max-w-2xl mb-8 animate-fade-up"
           style={{ color: "var(--muted-foreground)", animationDelay: "0.35s" }}
         >
-          I build robust, full-stack solutions — specializing in{" "}
-          <span style={{ color: "#cc3333", fontWeight: 600 }}>Ruby on Rails</span> back-end
-          engineering and{" "}
-          <span style={{ color: "#3ddc84", fontWeight: 600 }}>Native Android Development</span>{" "}
-          with Java. Strong foundation in{" "}
-          <span style={{ color: "var(--foreground)" }}>Operating Systems</span> and{" "}
-          <span style={{ color: "var(--foreground)" }}>Computer Architecture</span>. Currently
-          exploring{" "}
-          <span style={{ color: "var(--accent)" }}>NLP &amp; Transformers</span>.
+          I build ML models and systems-level code from scratch. Specializing in{" "}
+          <span style={{ color: "#a78bfa", fontWeight: 600 }}>Machine Learning</span>,{" "}
+          <span style={{ color: "#06b6d4", fontWeight: 600 }}>Transformers &amp; NLP</span>, and{" "}
+          <span style={{ color: "var(--foreground)" }}>Systems Programming</span>. I implement
+          complex algorithms end-to-end:{" "}
+          <span style={{ color: "var(--accent)" }}>Autograds, RBF SVMs, RL models, and LMs</span>.
+          Strong foundation in{" "}
+          <span style={{ color: "var(--foreground)" }}>OS internals</span> and{" "}
+          <span style={{ color: "var(--foreground)" }}>Computer Architecture</span>.
         </p>
 
         {/* CTAs */}

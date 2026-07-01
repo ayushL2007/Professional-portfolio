@@ -201,8 +201,8 @@ export function Freelance() {
         <div
           className="mt-8 rounded-xl border p-5 flex flex-col sm:flex-row items-center justify-between gap-4"
           style={{
-            background: "rgba(99,102,241,0.07)",
-            borderColor: "rgba(99,102,241,0.2)",
+            background: "rgba(6,182,212,0.07)",
+            borderColor: "rgba(6,182,212,0.2)",
           }}
         >
           <div>
